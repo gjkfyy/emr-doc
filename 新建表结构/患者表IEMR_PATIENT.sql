@@ -5,7 +5,7 @@ CREATE TABLE IEMR_PATIENT
   PATIENT_ID                 VARCHAR2(32) not null,   --患者ID
   PATIENT_NAME               VARCHAR2(50),            --患者姓名
   INPATIENT_NO               VARCHAR2(32),            --住院号
-  X_NO                       VARCHAR2(32),            --X片号
+  XPIAN_NO                   VARCHAR2(32),            --X片号
   SEX                        NUMBER(1),               --患者性别
   PARENT_NAME                VARCHAR2(200),           --父母名
   AGE                        VARCHAR2(4000),          --年龄
@@ -51,7 +51,7 @@ tablespace GJKF
   COMMENT ON COLUMN IEMR_PATIENT.PATIENT_ID  IS '患者ID';   
   COMMENT ON COLUMN IEMR_PATIENT.PATIENT_NAME  IS '患者姓名'; 
   COMMENT ON COLUMN IEMR_PATIENT.INPATIENT_NO  IS '住院号'; 
-  COMMENT ON COLUMN IEMR_PATIENT.X_NO  IS 'X片号'; 
+  COMMENT ON COLUMN IEMR_PATIENT.XPIAN_NO  IS 'X片号'; 
   COMMENT ON COLUMN IEMR_PATIENT.SEX  IS '性别'; 
   COMMENT ON COLUMN IEMR_PATIENT.PARENT_NAME  IS '父母名'; 
   COMMENT ON COLUMN IEMR_PATIENT.AGE  IS '年龄'; 
