@@ -34,7 +34,15 @@ CREATE TABLE IEMR_PATIENT
   SPECIALITY_EXAM            VARCHAR2(200),           --专科检查
   IS_PIC                     NUMBER(1),               --照相
   IS_VIDEO                   NUMBER(1),               --录像
-  OTHER_DISEASES_HISTORY     VARCHAR2(4000)           --其它疾病史
+  OTHER_DISEASES_HISTORY     VARCHAR2(4000),           --其它疾病史
+  UPD_CNT                    INTEGER,                 --修改次数
+  CRT_TIME                   DATE,                    --创建时间
+  CRT_USER_ID                VARCHAR2(32),            --创建人ID
+  CRT_DEPT_CD                VARCHAR2(32),            --创建科室ID
+  LAST_UPD_TIME              DATE,                    --最后修改时间
+  LAST_UPD_DEPT_CD           VARCHAR2(32),            --最后修改科室ID
+  LAST_UPD_USER_ID           VARCHAR2(32),            --最后修改人ID
+  DEL_F                      NUMBER(1)                --删除标识
 )
 tablespace GJKF
   pctfree 10
@@ -81,3 +89,11 @@ tablespace GJKF
   COMMENT ON COLUMN IEMR_PATIENT.IS_PIC  IS '照相'; 
   COMMENT ON COLUMN IEMR_PATIENT.IS_VIDEO  IS '录像'; 
   COMMENT ON COLUMN IEMR_PATIENT.OTHER_DISEASES_HISTORY  IS '其它疾病史';
+  COMMENT ON COLUMN IEMR_PATIENT.UPD_CNT  IS '其它疾病史';
+  COMMENT ON COLUMN IEMR_PATIENT.CRT_TIME  IS '创建时间';
+  COMMENT ON COLUMN IEMR_PATIENT.CRT_USER_ID  IS '创建人ID';
+  COMMENT ON COLUMN IEMR_PATIENT.CRT_DEPT_CD  IS '创建科室ID';
+  COMMENT ON COLUMN IEMR_PATIENT.LAST_UPD_TIME  IS '最后修改时间';
+  COMMENT ON COLUMN IEMR_PATIENT.LAST_UPD_DEPT_CD  IS '最后修改科室ID';
+  COMMENT ON COLUMN IEMR_PATIENT.LAST_UPD_USER_ID  IS '最后修改人ID';
+  COMMENT ON COLUMN IEMR_PATIENT.DEL_F  IS '删除标识';
