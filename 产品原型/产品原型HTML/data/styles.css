@@ -69,9 +69,16 @@
 ._文本段落 {
   text-align:left;
 }
+._文本链接 {
+  color:#0000FF;
+}
 .line {
 }
 ._文本框 {
+  color:#000000;
+  text-align:left;
+}
+.text_area {
   color:#000000;
   text-align:left;
 }
@@ -86,8 +93,28 @@
   text-align:left;
 }
 .table_cell {
+  font-size:14px;
 }
 .menu_item {
 }
 ._水平线 {
+}
+._鼠标悬停文本链接 {
+  font-family:'微软雅黑';
+  font-weight:400;
+  font-style:normal;
+}
+._鼠标按下文本链接 {
+  font-family:'微软雅黑';
+  font-weight:400;
+  font-style:normal;
+}
+._文本框_多行_ {
+  font-family:'微软雅黑';
+  font-weight:400;
+  font-style:normal;
+  color:#000000;
+  text-align:left;
+}
+._表格 {
 }
